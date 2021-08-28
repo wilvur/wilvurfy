@@ -1,21 +1,17 @@
 const temas = [
     {id:0, titulo:"La cajita Infeliz", album:"Grandes fracasos vol.1", desc:"Sountrack", src:"cajita.mp3" , cover:"coverAgua.PNG"},
-    {id:1, titulo:"La sociedad del cansancio", album:"Grandes fracasos vol.1", desc:"Basado en la vida de una Hormiga", src:"cancionFinal.mp3" , cover:"coverAlbum.PNG"},
-    {id:2, titulo:"Sinfonia del marginado Wagner", album:"Grandes fracasos vol.1", desc:"primera sinfonica", src:"cancionInicial.mp3" , cover:"coverChina.PNG"},
-    {id:3, titulo:"Ennio Nipon Parte I", album:"Grandes fracasos vol.I", desc:"Soundtrack oriental", src:"puerco.mp3" , cover:"coverMedias.PNG"},
-    {id:4, titulo:"Mis amigos Imaginarios no vinieron a mi cumpleaños", album:"Grandes fracasos vol.1",  desc:"Balada Instrumental", src:"puerco.mp3" , cover:"coverVias.PNG"},
-    {id:5, titulo:"Música para meterte en el Osho", album:"Grandes fracasos vol.1",  desc:"Instrumental", src:"puerco.mp3" , cover:"coverVias.PNG"}
+    {id:1, titulo:"La sociedad del cansancio", album:"Grandes fracasos vol.1", desc:"Basado en la vida de una Hormiga", src:"sociedadcansancio.mp3" , cover:"coverAlbum.PNG"},
+    {id:2, titulo:"Sinfonia del marginado Wagner", album:"Grandes fracasos vol.1", desc:"primera sinfonica", src:"sinfonia01.mp3" , cover:"coverChina.PNG"},
+    {id:3, titulo:"Ennio Nipon Parte I", album:"Grandes fracasos vol.I", desc:"Soundtrack oriental", src:"ennioNippon.mp3" , cover:"coverMedias.PNG"}
 ];
 
 // gestion de la duracion de los temas 
 
 const temasDuracionTemp = [
-    40.336813,
-    45.0154,
     77.609775,
-    10.169625,
-    10.169625,
-    10.169625,
+    78.550175,
+    91.533025,
+    103.967325
 ];
 
 const totalDuracion = convertirSec(temasDuracionTemp.reduce((total, duracion) => {
@@ -29,7 +25,8 @@ function cargarMetadata(displayTemasDiv) {
         const temaD = new Audio(`./mp3/${tema.src}`);
         temaD.onloadedmetadata = function(){ 
             temasDuracion.push(temaD.duration);  
-        }      
+        }  
+            
         displayTemasDiv()
     });
 }
