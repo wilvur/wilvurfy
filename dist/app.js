@@ -12,7 +12,9 @@ const temasDuracionTemp = [
     77.609775,
     78.550175,
     91.533025,
-    103.967325
+    103.967325,
+    100.00000
+    
 ];
 
 const totalDuracion = convertirSec(temasDuracionTemp.reduce((total, duracion) => {
