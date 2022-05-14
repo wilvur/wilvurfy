@@ -2,7 +2,8 @@ const temas = [
     {id:0, titulo:"La cajita Infeliz", album:"Grandes fracasos vol.1", desc:"Sountrack", src:"cajita.mp3" , cover:"coverAgua.PNG"},
     {id:1, titulo:"La sociedad del cansancio", album:"Grandes fracasos vol.1", desc:"Basado en la vida de una Hormiga", src:"sociedadcansancio.mp3" , cover:"coverAlbum.PNG"},
     {id:2, titulo:"Sinfonia del marginado Wagner", album:"Grandes fracasos vol.1", desc:"primera sinfonica", src:"sinfonia01.mp3" , cover:"coverChina.PNG"},
-    {id:3, titulo:"Ennio Nipon Parte I", album:"Grandes fracasos vol.I", desc:"Soundtrack oriental", src:"ennioNippon.mp3" , cover:"coverMedias.PNG"}
+    {id:3, titulo:"Ennio Nipon Parte I", album:"Grandes fracasos vol.I", desc:"Soundtrack oriental", src:"ennioNippon.mp3" , cover:"coverMedias.PNG"},
+    {id:4, titulo:"Manzanas amistosas multidimensionales", album:"Grandes fracasos vol.I", desc:"demo01", src:"manzanas.mp3" , cover:"coverMedias.PNG"}
 ];
 
 // gestion de la duracion de los temas 
